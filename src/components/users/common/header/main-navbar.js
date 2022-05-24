@@ -3,19 +3,20 @@ import logo from "../../../../assets/img/logo/logo.png"
 import { Container, Nav, Navbar } from "react-bootstrap";
 import {RiHome3Line, RiCarLine, RiInformationLine, RiMapPinLine, RiUserLine} from "react-icons/ri";
 import { Link } from "react-router-dom";
+import "./main-navbar.css";
 
 
 const MainNavbar = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg" className="main-navbar" variant="dark">
       <Container>
         <Navbar.Brand as={Link} to="/">
             <img src={logo} alt="TRVLCars Rental Car"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link as={Link} to="/">
+          <Nav className="ms-auto">
+            <Nav.Link as={Link} to="/" className="active">
               <RiHome3Line/>Home</Nav.Link>
             <Nav.Link as={Link} to="vehicles">
               <RiCarLine/>Cars</Nav.Link>

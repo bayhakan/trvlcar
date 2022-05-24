@@ -12,7 +12,7 @@ const ContactBar = () => {
           <a href="tel:19046516572">(904)-651-6572</a>
         </div>
       </li>
-      <li>
+      <li className="d-none d-lg-flex">
       <RiMailOpenLine />
         <div>
           <a href="mailto:info@trvlcar.com">info@trvlcar.com</a>

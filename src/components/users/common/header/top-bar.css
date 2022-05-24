@@ -1,8 +1,10 @@
 .topbar{
     position: absolute; /* bir şeyin position:absolute ise onu taşıyan da position: relative olmalı, eğer relative yapılmazsa kendisini body e göre ayarlar*/
     top:0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255,255,255,0.882);
     z-index:10;
+    width: 100%;
+    padding:1rem 0;
 }
 
 .topbar .social-bar{
@@ -12,6 +14,7 @@
     gap:1rem;
     padding:0;
     margin:0;
+    
 }
 
 .topbar .social-bar a{
@@ -24,15 +27,22 @@
     gap:1rem;
     padding:0;
     margin:0;
+    color:white;
+    justify-content: flex-end;/*sağ tarafa yanaştırır*/
 }
 
 .topbar .contact-bar li{
     display: flex;
     align-items: center;
     gap:1rem;
+    font-size: 0.9rem;
 }
 
 .topbar .contact-bar li svg{
     color: var(--color1);
     font-size: 2rem;
+}
+
+.topbar .contact-bar a{
+    color: white;
 }
