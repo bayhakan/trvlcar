@@ -1,48 +1,48 @@
-.topbar{
-    position: absolute; /* bir şeyin position:absolute ise onu taşıyan da position: relative olmalı, eğer relative yapılmazsa kendisini body e göre ayarlar*/
-    top:0;
-    border-bottom: 1px solid rgba(255,255,255,0.882);
-    z-index:10;
+.topbar {
+    position: absolute;
+    top: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.082);
+    z-index: 10;
     width: 100%;
-    padding:1rem 0;
-}
-
-.topbar .social-bar{
+    padding: 1rem 0;
+  }
+  
+  .social-bar {
     list-style: none;
-    display: flex; /* yanyana getirir*/
-    font-size:1.3rem;
-    gap:1rem;
-    padding:0;
-    margin:0;
-    
-}
-
-.topbar .social-bar a{
+    display: flex;
+    font-size: 1.3rem;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-bar a {
     color: white;
-}
-
-.topbar .contact-bar{
+  }
+  
+  .contact-bar {
     list-style: none;
-    display: flex; /* yanyana getirir*/
-    gap:1rem;
-    padding:0;
-    margin:0;
-    color:white;
-    justify-content: flex-end;/*sağ tarafa yanaştırır*/
-}
-
-.topbar .contact-bar li{
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    color: white;
+    justify-content: flex-end;
+  }
+  
+  .contact-bar li {
     display: flex;
     align-items: center;
-    gap:1rem;
+    gap: 1rem;
     font-size: 0.9rem;
-}
-
-.topbar .contact-bar li svg{
+  }
+  
+  .contact-bar li svg {
     color: var(--color1);
     font-size: 2rem;
-}
-
-.topbar .contact-bar a{
+  }
+  
+  .contact-bar a {
     color: white;
-}
+  }
+  
